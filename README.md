@@ -2,7 +2,7 @@
 
 This project is the sketch of the blog I use, it contains only a default article.
 
-__Technologies used:__ :desktop_computer:
+
 
 Technology :desktop_computer: | How I used :man_technologist:
 ------------ | -------------
@@ -14,9 +14,9 @@ This project will be done using the SCRUM time management framework. But at the 
 
 4 sprints:
 ## Research and Mapping :paintbrush:
-* 29.12.2020-01.01.2021 *
+*29.12.2020-01.01.2021*
 >- the period in which I look for designs & sketch what I want and how it will look.
->-I am looking for all the ways of SEO used for this type of site.
+>- I am looking for all the ways of SEO used for this type of site.
 
 ## Site completed, no features :hammer:
 >-includes: main page, article page
