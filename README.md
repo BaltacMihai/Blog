@@ -19,14 +19,14 @@ This project will be done using the SCRUM time management framework. But at the 
 >- I am looking for all the ways of SEO used for this type of site.
 
 ## Site completed, no features :hammer:
->-includes: main page, article page
+>- includes: main page, article page
 
 ## Features # 1 	:link:
 >- link to share
 >- feedback
 
 ## Features # 2 :chains:
->-the newsletter
+>- the newsletter
 
 
 __Tasks to do__ :memo: :pencil:
