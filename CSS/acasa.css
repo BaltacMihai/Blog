@@ -85,7 +85,7 @@ padding: 2%;
 .card-news{
     background-color: rgba(245, 245, 245, 0.747);
    
-    margin: 10% 3% 5% 7%;
+    margin: 3% 3% 5% 7%;
    
 }
 .box2img{
@@ -116,7 +116,7 @@ padding: 2%;
 {
     .box2img{
         position:absolute;
-        bottom: -2%;
+        bottom: 14%;
         left: 5%;
     
         height: 300px;
@@ -161,7 +161,7 @@ padding: 2%;
 }
 .el-1{
     position:absolute;
-    bottom: -13%;
+    bottom: 18%;
     left: 10%;
 }
 
@@ -180,7 +180,7 @@ padding: 2%;
 @media only screen and (min-width: 768px)
 {
     .icon{
-        bottom: -13%;
+        bottom: 17%;
         right: 3%;
      
     }
