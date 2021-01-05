@@ -1,0 +1,13 @@
+.container{
+    padding:5%;
+    margin:5%;
+    background-color: rgba(245, 245, 245, 0.747);
+}
+
+.img{
+    float:left;
+    margin-right: 5%;
+}
+.margin-top{
+    margin-top:5%;
+}
