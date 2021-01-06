@@ -11,7 +11,7 @@ CSS | Flex-box used to make a nice design.
 JavaScript | Search bar at "Article" page, which search for a key word   
 API | Google Maps Api, currently doesn't work, because I have don't have a valid key.
 
-
+# ScreenShots of the Website
 ## Home
 ![Home page img 1](https://github.com/BaltacMihai/Blog/blob/main/~PhotosForGit/Home1.PNG?raw=true)
 ![Home page img 2](https://github.com/BaltacMihai/Blog/blob/main/~PhotosForGit/Home2.PNG?raw=true)
