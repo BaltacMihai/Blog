@@ -1,18 +1,15 @@
-
-@media only screen and (min-width: 1200px)
-{
-    .container{
-        display: flex;
-flex-wrap:wrap;        
-    }
-
+.container{
+    display:flex;
+    display:row;
 }
+
 .card{
     background-color: rgba(245, 245, 245, 0.747);
     display: block;
     position: relative;
     margin: 5% 3% 5% 7%;
 }
+
 
 .card:hover{
     opacity: 0.8;
