@@ -1,0 +1,13 @@
+$edgeColor: #52dee5;
+$mainColor: #090302;
+$goldColor: #FFD700;
+$whiteColor: #F8F7FF;
+
+$width: 768px;
+
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+    @content
+}
+}
