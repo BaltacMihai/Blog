@@ -1,0 +1,56 @@
+@import "../../global.scss";
+
+.container {
+  margin-top: 3%;
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Oxygen", sans-serif;
+  }
+
+  .card {
+    background-color: white;
+    display: flex;
+    position: relative;
+    margin: 5% 3%;
+    padding: 5% 3%;
+    justify-content: space-around;
+  
+    flex-direction: column;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+      .left {
+        padding: 1em;
+
+        
+      }
+
+      .right {
+       
+
+        img {
+          height: 350px;
+          width: 500px;
+
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+  .creation{
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+  }
+}

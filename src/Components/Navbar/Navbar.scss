@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+.navbar {
+    background-color: $blackColor;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5%;
+    z-index: 99;
+    align-items: center;
+
+   
+        a{
+            font-family: 'Oxygen', sans-serif;
+            text-decoration: none;
+            color: $whiteColor;
+
+            &:hover{
+                
+                text-decoration: underline;
+            }
+            
+
+            .active{
+                background-color: $goldColor;
+            }
+        }
+
+
+       
+   
+}
