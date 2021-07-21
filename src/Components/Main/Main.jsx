@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
+import Article from '../Article/Article';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {DATA} from "../../shared/articles";
 class Main extends Component{
@@ -24,6 +25,13 @@ return (
   </div>
 )
     }
+    const ArticleWithId = ({match}) =>
+    {
+      return (
+        <Article data = {this.state.articles.filter((article)=> article.id ===parseInt(match.params.id,10))[0]} />
+      )
+     
+    }
       return (
 <div>
 <Navbar />
@@ -32,10 +40,10 @@ return (
   <Route path="/home" component = {Home} />
    <Route  path="/aboutus" component = {AboutPage} />
 
-        {/* <Route exact path="/articles" component={()=> <Menu dishes ={this.state.dishes} />} />
-         <Route path="/menu/:dishId" component={DishWithId} /> 
+         <Route exact path="/articles" component={()=> <Menu dishes ={this.state.dishes} />} />
+         <Route path="/articles/:id" component={ArticleWithId} /> 
   
-  <Route  exact path="/contactus" component = {Contact} /> */}
+  {/*<Route  exact path="/contactus" component = {Contact} /> */}
      
       <Redirect to="/home" />  
       </Switch>
