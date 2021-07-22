@@ -11,19 +11,29 @@
         justify-content: center;
         align-items: center;
         .article {
-          width: 70%;
+         
           box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
       
           .details {
             display: flex;
             flex-direction: column;
-      
+      img{
+        @include mobile{
+          width: 100%;
+       }
+      }
             .date_author {
               display: flex;
               flex-direction: row-reverse;
               justify-content: space-between;
               padding: 0.5em;
+            }
+            .text{
+              padding: 2em;
+              @include mobile{
+                padding: 1em;
+             }
             }
             
           }
