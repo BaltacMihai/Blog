@@ -1,0 +1,33 @@
+@import "../../global.scss";
+.menu
+{ padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: flex-start;
+    .container {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .article {
+          width: 70%;
+          box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+          .details {
+            display: flex;
+            flex-direction: column;
+      
+            .date_author {
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: space-between;
+              padding: 0.5em;
+            }
+            
+          }
+        }
+      }
+}
+
