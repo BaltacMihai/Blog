@@ -9,9 +9,12 @@ export class ArticleCard extends Component {
     render() {
         return (
             <div className="articleCard">
+                <div className="header">
                 <img src={this.props.elem.img} alt={this.props.elem.name}  />
-                <div className="description">
                 <h2>{this.props.elem.name}</h2>
+                </div>
+                
+                <div className="description">
                 <p>{this.props.elem.description}</p>
                 </div>
                 <Link to={`/articles/${this.props.elem.id}`} onClick={()=>{<Article data= {this.props.elem}/>} }>See More</Link>

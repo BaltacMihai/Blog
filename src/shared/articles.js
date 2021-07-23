@@ -30,7 +30,7 @@ export const DATA = [
     },{
         id:   4,
         name: "Title 4",
-        img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        img: "https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270",
         date: "21.07.2021",
         author: "Baltac Mihai-Cristian",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rhoncus enim, lacinia elementum nunc. Phasellus vitae augue tincidunt, gravida velit ut, bibendum urna. Morbi auctor hendrerit sagittis. Nam tincidunt massa at nulla iaculis malesuada. Phasellus malesuada ac quam ac ornare. Praesent sem velit, euismod non pretium ac, interdum eu est. Aenean vel purus sem. In in hendrerit ante. Nam laoreet eleifend velit, vulputate semper lectus porta ac. Sed congue porta nunc a pellentesque. Maecenas feugiat purus nec erat congue, vel molestie massa varius. Nullam ornare mattis enim, ullamcorper faucibus tortor iaculis in. Aliquam cursus sodales lorem sit amet consectetur.",
