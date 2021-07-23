@@ -16,14 +16,16 @@ class Main extends Component {
   }
 
   render() {
+    const last3elements = this.state.articles.slice(
+      Math.max(this.state.articles.length - 4, 1)
+    );
+    last3elements.pop();
     const Home = () => {
       return (
         <div>
           <HomePage
             main={this.state.articles[this.state.articles.length - 1]}
-            last3articles={this.state.articles.slice(
-              Math.max(this.state.articles.length - 3, 0)
-            )}
+            last3articles={last3elements}
           />
         </div>
       );
@@ -58,7 +60,7 @@ class Main extends Component {
 
           <Redirect to="/home" />
         </Switch>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

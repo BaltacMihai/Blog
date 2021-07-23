@@ -13,9 +13,9 @@ export class HomePage extends Component {
      
       return (
         <div className="cards">
-          <ArticleCard elem={arr.arr[0]} />
-          <ArticleCard elem={arr.arr[1]} />
           <ArticleCard elem={arr.arr[2]} />
+          <ArticleCard elem={arr.arr[1]} />
+          <ArticleCard elem={arr.arr[0]} />
         </div>
       );
     };
