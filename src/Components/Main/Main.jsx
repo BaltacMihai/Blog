@@ -20,7 +20,7 @@ constructor(props)
     {
 return (
   <div>
-    <HomePage main ={this.state.articles[this.state.articles.length-1]}/>
+    <HomePage main ={this.state.articles[this.state.articles.length-1]} last3articles= {this.state.articles.slice(Math.max(this.state.articles.length - 3, 0))}/>
    
   </div>
 )

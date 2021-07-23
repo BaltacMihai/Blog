@@ -39,7 +39,7 @@ export const DATA = [
     },{
         id:   5,
         name: "Title 5",
-        img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+        img: "https://mymodernmet.com/wp/wp-content/uploads/2019/07/will-burrard-lucas-beetlecam-23-1024x683.jpg",
         date: "21.07.2021",
         author: "Baltac Mihai-Cristian",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rhoncus enim, lacinia elementum nunc. Phasellus vitae augue tincidunt, gravida velit ut, bibendum urna. Morbi auctor hendrerit sagittis. Nam tincidunt massa at nulla iaculis malesuada. Phasellus malesuada ac quam ac ornare. Praesent sem velit, euismod non pretium ac, interdum eu est. Aenean vel purus sem. In in hendrerit ante. Nam laoreet eleifend velit, vulputate semper lectus porta ac. Sed congue porta nunc a pellentesque. Maecenas feugiat purus nec erat congue, vel molestie massa varius. Nullam ornare mattis enim, ullamcorper faucibus tortor iaculis in. Aliquam cursus sodales lorem sit amet consectetur.",

@@ -1,12 +1,26 @@
 @import "../../global.scss";
 
+
 .container {
   margin-top: 3%;
   padding: 1em;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+    }
+    .articleCard{
+      
+      flex: 0 0 30%;
+      @include mobile {
+        flex: 0 0 90%;
+      }
+    }
+  }
   h1 {
     font-family: "Oxygen", sans-serif;
   }

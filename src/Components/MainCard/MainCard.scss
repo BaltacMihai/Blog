@@ -29,7 +29,7 @@
       .left {
         padding: 1em;
         border: inherit;
-        button {
+        .link {
           pointer-events: auto;
           cursor: pointer;
           background: $blackColor;
@@ -54,6 +54,9 @@
       }
 
       .right {
+        display: flex;
+    justify-content: center;
+    align-items: center;
         img {
          padding: 0;
          height: 350px;
