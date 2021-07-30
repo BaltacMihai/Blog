@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './AboutPage.scss'
 import linkedin from './../../logos/linkedin.png'
+import github from './../../logos/github.png'
+import portfolio from './../../logos/portfolio.png'
 import profile from './../../Photos/photo.jfif'
 export class AboutPage extends Component {
     render() {
@@ -9,8 +11,14 @@ export class AboutPage extends Component {
                           
                 <div className="card-page">
                     <div className="left">
-                        <img src={profile}  alt="" />
-                        <div className="social"></div>
+                        <img src={profile}  alt="" className="profile" />
+                        <div className="flex-row">
+          <a href="https://github.com/BaltacMihai"><img src={github} alt="GitHub" className="logo"/></a>
+            <a href="https://baltacmihai.github.io/"><img src={portfolio} alt="Portfolio" className="logo"/></a>
+            <a href="https://www.linkedin.com/in/baltac-mihai-cristian/">
+              <img src={linkedin} alt="LinkedIn" className="logo"/></a>
+           
+                        </div>
                     </div>
                     <div className="right">
                         <h1>Baltac Mihai-Cristian</h1>
