@@ -1,0 +1,44 @@
+@import "../../global.scss";
+
+.container-page {
+    background-image: url("../../Photos/background.jpg") ;
+    padding: 7em 0em;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    .card-page{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 1em 2em;
+        @include mobile {
+            flex-direction: column;
+
+          }
+    .left{
+        img{
+            width: 200px;
+            border-radius: 100%;
+            position: relative;
+            top: -4em;
+        }
+    }
+   .right{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: flex-start;
+
+h1{
+    margin-left: 1em;
+}
+       p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+       }
+   }
+    }
+}

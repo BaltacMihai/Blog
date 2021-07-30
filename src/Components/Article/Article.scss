@@ -7,6 +7,8 @@
   align-items: flex-start;
   @include mobile {
     padding: 0;
+    padding-top: 1em;
+
   }
   .container {
     display: flex;

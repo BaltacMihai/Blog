@@ -5,6 +5,7 @@ export class Article extends Component {
     super(props);
   }
   render() {
+   
     return (
       <div className="menu">
         <h1>{"Article/" + this.props.data.name}</h1>
@@ -16,9 +17,11 @@ export class Article extends Component {
               <div className="date_author">
                 <p>{this.props.data.author}</p>
               </div>
-              <div className="text">{this.props.data.text}</div>
+              <div className="text" dangerouslySetInnerHTML={{__html: this.props.data.text}}>
+                
+                </div>
             </div>
-            <div className="text"></div>
+           
           </div>
           {console.log(this.props.data.name)}
         </div>

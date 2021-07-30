@@ -1,25 +1,48 @@
 @import "../../global.scss";
 
-.flex-row{
+.flex-column {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5em;
     background-color: $blackColor;
-  
-    .left,.right{
+
+    .top {
+        p {
+            color: $whiteColor;
+        }
+    }
+    .flex-row{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        flex: 0 0 50%;
-        .link,a{
+        a{
+            font-family: 'Oxygen', sans-serif;
             text-decoration: none;
             color: $whiteColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1em;
+
             &:hover{
                 
                 text-decoration: underline;
             }
+            
+
+            .active{
+                background-color: $goldColor;
+            }
+            .logo{
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-left: 3px;
+            }
         }
+
     }
-    
 }
