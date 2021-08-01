@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .articles {
-  margin: 5em;
+  margin: 7vw;
 
   .row {
     display: flex;
@@ -9,14 +9,17 @@
     @include mobile {
       flex-direction: column;
     }
-    .cards{
-        .articleCard {
-            flex: 0 0 30%;
-            @include mobile {
-              flex: 0 0 90%;
-            }
-          }
+  
+    .cards {
+      .articleCard {
+        flex: 0 0 30%;
+        @include mobile {
+          flex: 0 0 90%;
+        }
+        @include tablet{
+        flex: 0 0 44%;
+        }
+      }
     }
-    
   }
 }

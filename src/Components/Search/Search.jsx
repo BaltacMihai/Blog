@@ -6,7 +6,10 @@ export class Search extends Component {
   constructor(props) {
     super(props);
     this.searchFunction = this.searchFunction.bind(this);
+    
   }
+  
+
 
   searchFunction() {
     const value = document.getElementById("search").value;
@@ -30,10 +33,10 @@ export class Search extends Component {
           <img src={search} alt="search_icon" className="search_icon" />
         </div>
         <div className="justify-space">
-        <button id="all">All</button>
-        <button id="tech">Tech</button>
-        <button id="edu">Education</button>
-        <button id="mot">Motivational</button>
+        <button id="all" onClick={() => this.props.category("all") }>All</button>
+        <button id="tech"  onClick={() => this.props.category("tech")}>Tech</button>
+        <button id="edu"  onClick={() => this.props.category("Educational")}>Education</button>
+        <button id="mot"  onClick={() => this.props.category("Motivational")}>Motivational</button>
         </div>
         
       </div>

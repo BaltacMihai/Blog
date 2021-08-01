@@ -17,7 +17,10 @@ export class ArticleCard extends Component {
                 <div className="description">
                 <p>{this.props.elem.description}</p>
                 </div>
-                <Link to={`/articles/${this.props.elem.id}`} onClick={()=>{<Article data= {this.props.elem}/>} }>See More</Link>
+                <div className="row-justify">
+                    <Link to={`/articles/${this.props.elem.id}`} onClick={()=>{<Article data= {this.props.elem}/>} }>See More</Link>
+                <p>{this.props.elem.tag}</p>
+                </div>
                 
             </div>
         )
