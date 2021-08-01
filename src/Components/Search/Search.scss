@@ -1,0 +1,52 @@
+@import "../../global.scss";
+.main-search {
+  .container-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      min-width: 80%;
+      height: 40px;
+      border: 1px solid $blackColor;
+      border-radius: 5px;
+      padding: 2px 23px 2px 30px;
+      outline: 0;
+      background-color: #f5f5f5;
+      &:hover,
+      &:focus {
+        border: 1.5px solid $edgeColor;
+        background-color: white;
+      }
+    }
+    img {
+      position: relative;
+      left: -53px;
+      cursor: pointer;
+    }
+  }
+
+  .justify-space {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: flex-end;
+    @include mobile {
+      justify-content: center;
+
+    }
+    button {
+      margin: 5px;
+      text-decoration: none;
+      pointer-events: auto;
+      cursor: pointer;
+      background: $blackColor;
+      color: $whiteColor;
+      border: inherit;
+      padding: 0.3rem 0.5rem;
+      font-family: inherit;
+      font-size: inherit;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { DATA } from "../../shared/articles";
 import Footer from "../Footer/Footer";
 import ScrollToTop from "../../functions/ScrollToTop";
+import Articles from "../Articles/Articles";
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -42,7 +43,7 @@ class Main extends Component {
       );
     };
     return (
-      <div>
+      <div className="main">
         <Navbar />
         <ScrollToTop />
         <Switch>
@@ -52,7 +53,7 @@ class Main extends Component {
           <Route
             exact
             path="/articles"
-            component={() => <Menu dishes={this.state.dishes} />}
+            component={() => <Articles data = {this.state.articles}/>}
           />
           <Route path="/articles/:id" component={ArticleWithId} />
 
@@ -61,6 +62,7 @@ class Main extends Component {
           <Redirect to="/home" />
         </Switch>
         <Footer />
+        
       </div>
     );
   }

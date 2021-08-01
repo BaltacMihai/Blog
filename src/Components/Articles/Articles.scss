@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.articles {
+  margin: 5em;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile {
+      flex-direction: column;
+    }
+    .cards{
+        .articleCard {
+            flex: 0 0 30%;
+            @include mobile {
+              flex: 0 0 90%;
+            }
+          }
+    }
+    
+  }
+}

@@ -21,7 +21,6 @@ export class HomePage extends Component {
     };
     return (
       <div className="container">
-        {console.log(this.props.last3articles)}
         <h1>News</h1>
         <MainCard main={this.props.main} />
         <h1>Relevant</h1>
