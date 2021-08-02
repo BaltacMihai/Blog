@@ -2,10 +2,13 @@
 
 .container-page {
     background-image: url("../../Photos/background.jpg");
-    padding: 7em 0em;
+    padding: 10vw 0;
     background-repeat: no-repeat;
     background-size: cover;
+    @include mobile {
+        padding: 40vw 0;
 
+    }
     .card-page {
         background-color: white;
         display: flex;

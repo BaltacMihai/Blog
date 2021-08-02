@@ -4,40 +4,57 @@ import "./Articles.scss";
 import ArticleCard from "../ArticleCard/ArticleCard";
 
 const Cards = (props) => {
+  let counter = 0;
+  let found = false;
   return props.articles.map((article) => {
     //dispaly all cards ( didn't applied any filter)
     if (
       props &&
       props.filterName == null &&
       props.categ.toUpperCase() == "ALL"
-    )
+    ) {
+      found = true;
       return <ArticleCard elem={article} />;
+    }
 
-      // display the cards when category is pressed
-     else if (
-        props.filterName == null &&
-        article.tag.toUpperCase() == props.categ.toUpperCase()
-      )
-        return <ArticleCard elem={article} />;
+    // display the cards when category is pressed
+    else if (
+      props.filterName == null &&
+      article.tag.toUpperCase() == props.categ.toUpperCase()
+    ) {
+      found =true;
+      return <ArticleCard elem={article} />;
+    }
 
     //display searched element
     else if (
       props.filterName != null &&
-      article.name.toUpperCase().includes(props.filterName.toUpperCase())
-      &&
+      article.name.toUpperCase().includes(props.filterName.toUpperCase()) &&
       props.categ.toUpperCase() == "ALL"
-    )
+    ) {
+      found =true;
       return <ArticleCard elem={article} />;
-      
-      else if (
-        props.filterName != null &&
-        article.name.toUpperCase().includes(props.filterName.toUpperCase())
-        &&
-        article.tag.toUpperCase() == props.categ.toUpperCase()
-
-      )
-        return <ArticleCard elem={article} />;
-    });
+    } else if (
+      props.filterName != null &&
+      article.name.toUpperCase().includes(props.filterName.toUpperCase()) &&
+      article.tag.toUpperCase() == props.categ.toUpperCase()
+    ) {
+      found =true;
+      return <ArticleCard elem={article} />;
+    }
+   
+    if(found === false)
+  { 
+    found = true;
+    document.getElementById("reverse").style.flexDirection = "row-reverse";
+    return (
+      <div id="error">
+        <p>No such article</p>
+      </div>
+    )
+  }
+  });
+  
 };
 
 export class Articles extends Component {
@@ -68,7 +85,7 @@ export class Articles extends Component {
           category={this.handleCategory}
         />
 
-        <div className="row">
+        <div className="row" id="reverse">
           <Cards
             articles={this.props.data}
             filterName={this.state.charToSearch}
